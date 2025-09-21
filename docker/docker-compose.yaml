@@ -5,6 +5,8 @@ services:
   runtime-setup:
     image: netty:default
     build:
+      platforms:
+        - linux/amd64
       context: .
       dockerfile: Dockerfile.centos6
 
